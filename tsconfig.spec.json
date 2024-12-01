@@ -1,0 +1,22 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "alwaysStrict": false,
+    "esModuleInterop": true,
+    "noEmit": false,
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "outDir": "./dist-tests",
+    "strictNullChecks": false,
+  },
+  "include": [
+    "src/**/*.mts",
+    "testing/**/*.mts"
+  ],
+  "exclude": [
+    "node_modules",
+    "tmp",
+    "dist"
+  ]
+}

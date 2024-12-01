@@ -1,0 +1,74 @@
+{
+  "type": "module",
+  "name": "@digital-alchemy/graylog",
+  "description": "Stream logs from an app using @digital-alchemy to Graylog via udp",
+  "repository": {
+    "url": "git+https://github.com/Digital-Alchemy-TS/graylog"
+  },
+  "version": "24.11.1",
+  "author": {
+    "url": "https://github.com/zoe-codez",
+    "name": "Zoe Codez"
+  },
+  "homepage": "https://docs.digital-alchemy.app",
+  "scripts": {
+    "build": "rm -rf dist/; tsc -p tsconfig.lib.json",
+    "lint": "eslint src",
+    "prepublishOnly": "yarn build",
+    "test": "vitest",
+    "upgrade": "yarn up '@digital-alchemy/*'"
+  },
+  "bugs": {
+    "email": "bugs@digital-alchemy.app",
+    "url": "https://github.com/Digital-Alchemy-TS/graylog/issues/new/choose"
+  },
+  "keywords": [
+    "logging",
+    "log",
+    "typescript",
+    "graylog",
+    "digital-alchemy"
+  ],
+  "funding": [
+    {
+      "url": "https://github.com/sponsors/zoe-codez",
+      "type": "GitHub"
+    }
+  ],
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./testing": "./dist/testing/helpers/index.mjs"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@digital-alchemy/core": "^24.11.4"
+  },
+  "devDependencies": {
+    "@cspell/eslint-plugin": "^8.16.0",
+    "@eslint/compat": "^1.2.3",
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.15.0",
+    "@types/node": "^22.9.3",
+    "@typescript-eslint/eslint-plugin": "8.15.0",
+    "@typescript-eslint/parser": "8.15.0",
+    "eslint": "9.15.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsonc": "^2.18.2",
+    "eslint-plugin-no-unsanitized": "^4.1.2",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-security": "^3.0.1",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-sonarjs": "^2.0.4",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "eslint-plugin-unicorn": "^56.0.1",
+    "prettier": "^3.3.3",
+    "typescript": "^5.7.2"
+  },
+  "packageManager": "yarn@4.5.3"
+}
